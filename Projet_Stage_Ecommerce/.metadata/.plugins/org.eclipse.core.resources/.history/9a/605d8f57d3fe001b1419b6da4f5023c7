@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+<title>Accueil-Tableau de bord Administrateur</title>
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+<script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+
+
+</head>
+<body>
+<div class="container-fluid">
+	<div>
+		<nav class="navbar navbar-expand-lg  bg-dark navbar-dark">
+		<a class="navbar-brand" th:href="@{/}">
+			<img th:src="@{/images/3.2 ShopmeAdminSmall.png}"/>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapase" data-target="#topNavbar">
+		</button>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/users}">Utilisateurs  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/categories}">Cathegories  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/brands}">Marques  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/products}">Produits  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/customers}">Clients </a>
+					
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/shipping}">	Livraison  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/orders}">Commande  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/report}">Rapport de vente  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/articles}">Articles  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/menus}">Menus  </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/settings}">Parametres  </a>
+				</li>
+				
+			</ul>
+		</div>
+
+		
+				
+			
+		
+		</nav>
+	</div>
+	<div>
+		<h1>Bienvenue sur la tableau de bord Administrateur</h1>
+	</div>
+	</div>
+	<div>
+		<p>Shopme Control Panel -Copyright &copy;Shopme</p>
+	</div>
+</body>
+</html>

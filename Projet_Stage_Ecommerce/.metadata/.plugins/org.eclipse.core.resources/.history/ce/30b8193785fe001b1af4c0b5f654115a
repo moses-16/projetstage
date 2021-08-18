@@ -1,0 +1,5 @@
+server.port=8080
+server.servlet.context-path=/ShopmeAdmin
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.enabled=false

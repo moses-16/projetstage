@@ -1,0 +1,108 @@
+package com.shopme.admin.user;
+
+
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.Optional;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+
+import com.shopme.common.entity.Role;
+
+@DataJpaTest
+@AutoConfigureTestDatabase(replace = Replace.NONE)
+public class RoleRepositoryTests {
+	
+	//@Autowired
+	//private RoleRepository repo;
+	RoleRepository repo = new RoleRepository() {
+		
+		@Override
+		public <S extends Role> Iterable<S> saveAll(Iterable<S> entities) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public <S extends Role> S save(S entity) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public Optional<Role> findById(Integer id) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public Iterable<Role> findAllById(Iterable<Integer> ids) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public Iterable<Role> findAll() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public boolean existsById(Integer id) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+		@Override
+		public void deleteById(Integer id) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void deleteAllById(Iterable<? extends Integer> ids) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void deleteAll(Iterable<? extends Role> entities) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void deleteAll() {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void delete(Role entity) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public long count() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	};
+	
+	@Test
+	public void testCreateFirstRole() {
+		Role roleAdmin = new Role("Admin" , "manage everything");
+		Role savedRole = repo.save(roleAdmin);
+		
+		//assertThat(savedRole.getId()).isGreaterThan(0);
+		
+		
+	}
+
+}

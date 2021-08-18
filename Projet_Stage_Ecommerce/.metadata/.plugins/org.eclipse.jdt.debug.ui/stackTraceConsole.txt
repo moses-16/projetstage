@@ -1,0 +1,10 @@
+java.lang.Exception: No tests found matching [{ExactMatcher:fDisplayName=testCreateFirstRole(com.shopme.common.entity.Role)], {LeadingIdentifierMatcher:fClassName=com.shopme.admin.user.RoleRepositoryTests,fLeadingIdentifier=testCreateFirstRole]] from org.junit.internal.requests.ClassRequest@1f0f1111
+	at org.junit.internal.requests.FilterRequest.getRunner(FilterRequest.java:40)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createFilteredTest(JUnit4TestLoader.java:83)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:74)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:49)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:526)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
